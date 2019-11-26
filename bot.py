@@ -21,7 +21,7 @@ async def member_removed(member):
     print(f'{member} has left the server. :cry:')
 
 
-@client.command(brief='Ping->Pong!', description='Kinda like a hello world')
+@client.command(brief='Ping-->Pong!', description='Kinda like a hello world')
 async def ping(ctx):
     await ctx.send('pong')
 

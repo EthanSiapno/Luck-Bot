@@ -24,3 +24,5 @@ Users / players will gamble an amount to play against the bot. Each user will be
 * Play music (maybe from Youtube? Possibly Spotify?)
 * Assign roles?
 * Kick people 
+
+Note to self: Don't forget to run "source (filename).env" before running the bot.py in order to make sure the token is selected.
