@@ -1,9 +1,11 @@
 # RNG-Bot
 A Discord bot that gives users to engage in games with an RNG aspect. (I don't want to discredit the skill involved in these games.)
 
-## Currently Implemented
+# Currently Implemented
 * Ask 8Ball
-  * Ask a Yes/No question and be greeted with a supporting, or sarcastic answer.
+  * Ask a Yes/No question and get greeted with support ... or sarcasm.
+
+
 
 # Unimplemented:
 
