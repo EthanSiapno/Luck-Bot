@@ -20,12 +20,10 @@ async def on_member_join(member):
 async def member_removed(member):
     print(f'{member} has left the server. :cry:')
 
-# brief='Ping->Pong!', description='Kinda like a hello world'
+
 @client.command(brief='Ping->Pong!', description='Kinda like a hello world')
 async def ping(ctx):
     await ctx.send('pong')
-
-# brief='Ask an 8ball a Yes/No question.', description='Can also use ?8ball or ?8 for shorthand.',
 
 
 @client.command(brief='Ask an 8ball a Yes/No question.',
@@ -42,5 +40,6 @@ async def ask8ball(ctx, *, question):
                'Do it.',
                'X, because I am full of doubt.']
     await ctx.send(f'Question: {question}\nAnswer: {random.choice(answers)}')
+
 
 client.run(os.getenv('DISCORD_BOT_TOKEN'))
