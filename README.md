@@ -1,9 +1,11 @@
 # RNG-Bot
 A Discord bot that gives users to engage in games with an RNG aspect. (I don't want to discredit the skill involved in these games.)
 
-## Currently Implemented
+# Currently Implemented
 * Ask 8Ball
   * Ask a Yes/No question and be greeted with a supporting, or sarcastic answer.
+
+
 
 # Unimplemented:
 
@@ -23,4 +25,4 @@ Users / players will gamble an amount to play against the bot. Each user will be
 ### More Miscellaneous Features (Less Likely in the Near Future)
 * Play music (maybe from Youtube? Possibly Spotify?)
 * Assign roles?
-* Kick people 
+* Kick/Ban people?
