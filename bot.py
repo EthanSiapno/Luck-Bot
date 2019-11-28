@@ -42,4 +42,19 @@ async def ask8ball(ctx, *, question):
     await ctx.send(f'Question: {question}\nAnswer: {random.choice(answers)}')
 
 
+@client.command(brief='Crack open a fortune cookie.',
+                description='Can also use ?cookie or ?fc for shorthand.',
+                aliases=['fc', 'cookie'])
+async def fortune(ctx):
+    fortunes = ['Your near future is too murky to decipher',
+                'Do not mistake temptation for opportunity.',
+                'Investing in Bitcoin after 2017 was a mistake.',
+                'A foolish man listens to his heart. A wise man listens to cookies.',
+                'Never forget a friend. Especially if he owes you.',
+                'You crave food right now.',
+                'You can read. Take advantage of that.',
+                '']
+    await ctx.send(f'Fortune Cookie: {random.choice(fortunes)}')
+
+
 client.run(os.getenv('DISCORD_BOT_TOKEN'))
