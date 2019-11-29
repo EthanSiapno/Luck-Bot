@@ -58,23 +58,9 @@ async def fortune(ctx):
 
 
 @client.command(brief='Picks from provided choices at random.',
-                description='Provide a list of choices. Separate choices with a comma.')
+                description='Provide a list of choices. Separate choices with a space.')
 async def pick(ctx, *, s):
-    s = s.strip()
-    comma_list = []
-    choices = []
-    for i in range(0, len(s)):
-        if s[i] == ',':
-            comma_list.append(i)
-    first = 0
-    if not len(comma_list) == 0:
-        for j in comma_list:
-            choices.append(s[first:j])
-            first = j
-    else:
-        choices.append(s)
-
-    output_choices = ''
+    choices = s.split()
     await ctx.send(f'Choices: {choices}\nChosen One: {random.choice(choices)}')
 
 client.run(os.getenv('DISCORD_BOT_TOKEN'))
