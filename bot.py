@@ -50,11 +50,31 @@ async def fortune(ctx):
                 'Do not mistake temptation for opportunity.',
                 'Investing in Bitcoin after 2017 was a mistake.',
                 'A foolish man listens to his heart. A wise man listens to cookies.',
-                'Never forget a friend. Especially if he owes you.',
+                'Never forget a friend. Especially if he owes you something.',
                 'You crave food right now.',
                 'You can read. Take advantage of that.',
                 '']
     await ctx.send(f'Fortune Cookie: {random.choice(fortunes)}')
 
+
+@client.command(brief='Picks from provided choices at random.',
+                description='Provide a list of choices. Separate choices with a comma.')
+async def pick(ctx, *, s):
+    s = s.strip()
+    comma_list = []
+    choices = []
+    for i in range(0, len(s)):
+        if s[i] == ',':
+            comma_list.append(i)
+    first = 0
+    if not len(comma_list) == 0:
+        for j in comma_list:
+            choices.append(s[first:j])
+            first = j
+    else:
+        choices.append(s)
+
+    output_choices = ''
+    await ctx.send(f'Choices: {choices}\nChosen One: {random.choice(choices)}')
 
 client.run(os.getenv('DISCORD_BOT_TOKEN'))
