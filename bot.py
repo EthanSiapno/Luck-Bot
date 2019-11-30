@@ -9,6 +9,7 @@ client = commands.Bot(command_prefix='?')
 @client.event
 async def on_ready():
     print(f'{client.user} has connected to Discord!')
+    await client.change_presence(activity=discord.Game('?help for commands.'))
 
 
 @client.event
@@ -21,7 +22,7 @@ async def member_removed(member):
     print(f'{member} has left the server. :cry:')
 
 
-@client.command(brief='Ping-->Pong!', description='Kinda like a hello world')
+@client.command(brief='Ping-->Pong!', description='My hello world alternative.')
 async def ping(ctx):
     await ctx.send('pong')
 
@@ -39,7 +40,10 @@ async def ask8ball(ctx, *, question):
                'If you don\'t do it, I\'ll be hella disappointed.',
                'Do it.',
                'X, because I am full of doubt.']
-    await ctx.send(f'Question: {question}\nAnswer: {random.choice(answers)}')
+    if question is None:
+        await ctx.send(f'Please enter in the following format:\n?8ball <insert question here>')
+    else:
+        await ctx.send(f'Question: {question}\nAnswer: {random.choice(answers)}')
 
 
 @client.command(brief='Crack open a fortune cookie.',
@@ -62,5 +66,6 @@ async def fortune(ctx):
 async def pick(ctx, *, s):
     choices = s.split()
     await ctx.send(f'Choices: {choices}\nChosen One: {random.choice(choices)}')
+
 
 client.run(os.getenv('DISCORD_BOT_TOKEN'))

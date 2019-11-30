@@ -8,6 +8,8 @@ A Discord bot that gives users to engage in games with an RNG aspect. (I don't w
   * Ask a Yes/No question and get greeted with support ... or sarcasm.
 * Fortune Cookie
   * Receive advice from a sometimes funny, sometimes wise fortune cookie.
+* RNG Chooser
+  * Provide a number of choices and the bot will pick one of the choices at random. Separate the choices with a space between each word.
 
 
 # Unimplemented:
@@ -23,7 +25,6 @@ Users / players will gamble an amount to play against the bot. Each user will be
 
 ### Non-Games
 * Lottery Number Picker (applies to Pennsylvania Powerball and Mega Millions)
-* RNG Chooser (Insert a given number of users and bot will choose between the choices at random)
 * Russian Roulette
 * Dice Rolls / Number Picker
 * Jokes
