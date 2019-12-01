@@ -33,13 +33,13 @@ async def ping(ctx):
 async def ask8ball(ctx, *, question):
     answers = ['Ask me again, see what happens.',
                'Ok fine, but you\'re gonna regret it.',
-               'You won\'t.',
-               'Sounds like an awful idea',
+               'Nah.',
+               'Sounds like an awful idea.',
                'Carpe diem',
                'I honestly don\'t care.',
                'If you don\'t do it, I\'ll be hella disappointed.',
                'Do it.',
-               'X, because I am full of doubt.']
+               'I press X to doubt.']
     if question is None:
         await ctx.send(f'Please enter in the following format:\n?8ball <insert question here>')
     else:
@@ -67,5 +67,17 @@ async def pick(ctx, *, s):
     choices = s.split()
     await ctx.send(f'Choices: {choices}\nChosen One: {random.choice(choices)}')
 
+
+@client.command(aliases=['higherOrLower', 'higher', 'lower'])
+async def numGuess(ctx, *, num1, num2):
+    gameInProgress = True
+    number = random.choice(range(num1, num2))
+    """
+    Start game. Let bot message the user saying the game has started.
+    Then, the user should guess numbers between the inputted range (inclusive).
+    After this, the bot will continue to message the user with a response saying
+    'higher', 'lower', or 'invalid input' if the user gives a non-numeric input.
+    """
+    await ctx.send(num1)
 
 client.run(os.getenv('DISCORD_BOT_TOKEN'))
