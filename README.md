@@ -11,6 +11,10 @@ A Discord bot that gives users to engage in games with an RNG aspect. (I don't w
 * RNG Chooser
   * Provide a number of choices and the bot will pick one of the choices at random. Separate the choices with a space between each word.
 
+# Mid-Implementation:
+
+### Non-Games
+* Number Guessing Game (Higher or Lower)
 
 # Unimplemented:
 
@@ -21,8 +25,6 @@ A Discord bot that gives users to engage in games with an RNG aspect. (I don't w
 * Roulette
 * Blackjack
 
-Users / players will gamble an amount to play against the bot. Each user will be given a starting currency.
-
 ### Non-Games
 * Lottery Number Picker (applies to Pennsylvania Powerball and Mega Millions)
 * Russian Roulette
@@ -31,8 +33,9 @@ Users / players will gamble an amount to play against the bot. Each user will be
 * Reminder
 
 ### More Miscellaneous Features (Less Likely in the Near Future)
+* Users / players will gamble an amount to play against the bot. Each user will be given a starting currency.
 * Play music (maybe from Youtube? Possibly Spotify?)
 * Assign roles?
-* Kick people 
+* Kick people
 
 Note to self: Don't forget to run "source (filename).env" before running the bot.py in order to make sure the token is selected.
