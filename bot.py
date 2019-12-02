@@ -61,14 +61,24 @@ async def fortune(ctx):
     await ctx.send(f'Fortune Cookie: {random.choice(fortunes)}')
 
 
-@client.command(brief='Picks from provided choices at random.',
+@client.command(brief='Chooses from provided choices at random.',
                 description='Provide a list of choices. Separate choices with a space.')
 async def pick(ctx, *, s):
     choices = s.split()
     await ctx.send(f'Choices: {choices}\nChosen One: {random.choice(choices)}')
 
 
-@client.command(aliases=['higherOrLower', 'higher', 'lower'])
+@client.command(brief='PA Powerball Lottery Number Generator.', aliases=['lotto1', 'pball', 'pb'])
+async def powerball(ctx):
+    await ctx.send('1')
+
+
+@client.command(brief='PA Mega Millions Lottery Number Generator.', aliases=['lotto2', 'mega', 'mm'])
+async def megaMillions(ctx):
+    await ctx.send('2')
+
+
+@client.command(brief='Higher/Lower Number Guessing Game.', aliases=['higherOrLower', 'higher', 'lower'])
 async def numGuess(ctx, *, num1, num2):
     gameInProgress = True
     number = random.choice(range(num1, num2))
@@ -78,6 +88,6 @@ async def numGuess(ctx, *, num1, num2):
     After this, the bot will continue to message the user with a response saying
     'higher', 'lower', or 'invalid input' if the user gives a non-numeric input.
     """
-    await ctx.send(num1)
+    await ctx.send(number)
 
 client.run(os.getenv('DISCORD_BOT_TOKEN'))
