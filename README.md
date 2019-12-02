@@ -15,6 +15,10 @@ A Discord bot that gives users to engage in games with an RNG aspect. (I don't w
 
 ### Non-Games
 * Number Guessing Game (Higher or Lower)
+  * Need to figure out how to have the bot active until the game is finished
+* Lottery Number Picker 
+  * Pennsylvania Powerball
+  * Mega Millions
 
 # Unimplemented:
 
@@ -26,9 +30,8 @@ A Discord bot that gives users to engage in games with an RNG aspect. (I don't w
 * Blackjack
 
 ### Non-Games
-* Lottery Number Picker (applies to Pennsylvania Powerball and Mega Millions)
 * Russian Roulette
-* Dice Rolls / Number Picker
+* Dice Rolls / Number Picker within range / Coin Flip (non-gambling)
 * Jokes
 * Reminder
 
