@@ -70,7 +70,16 @@ async def pick(ctx, *, s):
 
 @client.command(brief='PA Powerball Lottery Number Generator.', aliases=['lotto1', 'pball', 'pb'])
 async def powerball(ctx):
-    await ctx.send('1')
+    white_ball_list = []
+    for i in range(0, 5):
+        a = random.choice(range(1, 56))
+        if a in white_ball_list:
+            while a in white_ball_list:
+                a = random.choice(range(1, 56))
+        white_ball_list.append(a)
+    white_ball_list.sort()
+    pball = random.choice(range(1, 43))
+    await ctx.send(f'Numbers: {white_ball_list}, Powerball: {pball}')
 
 
 @client.command(brief='PA Mega Millions Lottery Number Generator.', aliases=['lotto2', 'mega', 'mm'])
