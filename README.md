@@ -5,14 +5,14 @@ A Discord bot that gives users to engage in games with an RNG aspect. (I don't w
 
 ### Non-Games
 * 8Ball
-  * Ask a Yes/No question and get greeted with support ... or sarcasm.
+    * Ask a Yes/No question and get greeted with support ... or sarcasm.
 * Fortune Cookie
-  * Receive advice from a sometimes funny, sometimes wise fortune cookie.
+    * Receive advice from a sometimes funny, sometimes wise fortune cookie.
 * RNG Chooser
-  * Provide a number of choices and the bot will pick one of the choices at random. Separate the choices with a space between each word.
+    * Provide a number of choices and the bot will pick one of the choices at random. Separate the choices with a space between each word.
 * Lottery Number Picker
-  * Pennsylvania Powerball
-    *Picks five "white" balls from a range of 1-55 (inclusive) and a Powerball, which is from a range of 1-42 (inclusive). The Powerball can be the same value as one of the white balls but there can be no two duplicating white balls.
+    * Pennsylvania Powerball
+        * Picks five "white" balls from a range of 1-55 (inclusive) and a Powerball, which is from a range of 1-42 (inclusive). The Powerball can be the same value as one of the white balls but there can be no two duplicating white balls.
 
 ## Mid-Implementation:
 
@@ -44,4 +44,4 @@ A Discord bot that gives users to engage in games with an RNG aspect. (I don't w
 * Kick people
 
 - - - -
-Note to self: Don't forget to run "source (filename).env" before running the bot.py in order to make sure the token is selected.
+__Note__: Don't forget to run "source (filename).env" before running the bot.py in order to make sure the token is selected.
