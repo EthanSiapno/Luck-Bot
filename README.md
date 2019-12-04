@@ -1,7 +1,7 @@
 # RNG-Bot
 A Discord bot that gives users to engage in games with an RNG aspect. (I don't want to discredit the skill involved in these games.)
 
-# Currently Implemented
+## Currently Implemented
 
 ### Non-Games
 * 8Ball
@@ -12,17 +12,17 @@ A Discord bot that gives users to engage in games with an RNG aspect. (I don't w
   * Provide a number of choices and the bot will pick one of the choices at random. Separate the choices with a space between each word.
 * Lottery Number Picker
   * Pennsylvania Powerball
-    * Picks five "white" balls from a range of 1-55 (inclusive) and a Powerball, which is from a range of 1-42 (inclusive). The Powerball can be the same value as one of the white balls but there can be no two duplicating white balls.
+        * Picks five "white" balls from a range of 1-55 (inclusive) and a Powerball, which is from a range of 1-42 (inclusive). The Powerball can be the same value as one of the white balls but there can be no two duplicating white balls.
 
-# Mid-Implementation:
+## Mid-Implementation:
 
 ### Non-Games
 * Number Guessing Game (Higher or Lower)
-  * Need to figure out how to have the bot active until the game is finished
+    * Need to figure out how to have the bot active until the game is finished
 * Lottery Number Picker
   * Mega Millions
 
-# Unimplemented:
+## Unimplemented:
 
 ### Games 
 * Coin Flip Predictor
@@ -43,4 +43,5 @@ A Discord bot that gives users to engage in games with an RNG aspect. (I don't w
 * Assign roles?
 * Kick people
 
+- - - -
 Note to self: Don't forget to run "source (filename).env" before running the bot.py in order to make sure the token is selected.
