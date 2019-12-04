@@ -12,7 +12,7 @@ A Discord bot that gives users to engage in games with an RNG aspect. (I don't w
   * Provide a number of choices and the bot will pick one of the choices at random. Separate the choices with a space between each word.
 * Lottery Number Picker
   * Pennsylvania Powerball
-        * Picks five "white" balls from a range of 1-55 (inclusive) and a Powerball, which is from a range of 1-42 (inclusive). The Powerball can be the same value as one of the white balls but there can be no two duplicating white balls.
+   * Picks five "white" balls from a range of 1-55 (inclusive) and a Powerball, which is from a range of 1-42 (inclusive). The Powerball can be the same value as one of the white balls but there can be no two duplicating white balls.
 
 ## Mid-Implementation:
 
