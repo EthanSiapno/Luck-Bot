@@ -20,7 +20,7 @@ A Discord bot that gives users to engage in games with an RNG aspect. (I don't w
 * Number Guessing Game (Higher or Lower)
     * Need to figure out how to have the bot active until the game is finished
 * Lottery Number Picker
-  * Mega Millions
+    * Mega Millions
 
 ## Unimplemented:
 
